@@ -602,7 +602,7 @@ ul {
 }
 @media (max-width: 38.75em) {
   .navigation__button {
-    display: inline-block;
+    display: block;
     left: 35rem;
   }
 }
@@ -620,7 +620,7 @@ ul {
 }
 @media (max-width: 38.75em) {
   .navigation__background {
-    display: inline-block;
+    display: block;
     left: 35rem;
   }
 }
