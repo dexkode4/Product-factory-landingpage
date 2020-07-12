@@ -17,7 +17,7 @@
     cursor: pointer;
     @media (max-width: 37em) {
       display: inline-block;
-      transform: translateX(-130%);
+      transform: translateX(-200%);
     }
   }
   &__background {
@@ -33,7 +33,7 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     @media (max-width: 37em) {
       display: inline-block;
-      transform: translateX(-150%);
+      transform: translateX(-200%);
     }
   }
   &__nav {

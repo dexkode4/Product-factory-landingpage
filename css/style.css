@@ -603,7 +603,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__button {
     display: inline-block;
-    transform: translateX(-130%);
+    transform: translateX(-200%);
   }
 }
 .navigation__background {
@@ -621,7 +621,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__background {
     display: inline-block;
-    transform: translateX(-150%);
+    transform: translateX(-200%);
   }
 }
 .navigation__nav {
