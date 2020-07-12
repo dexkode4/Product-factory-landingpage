@@ -603,7 +603,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__button {
     display: inline-block;
-    transform: translateX(-200%);
+    left: 35rem;
   }
 }
 .navigation__background {
@@ -621,7 +621,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__background {
     display: inline-block;
-    transform: translateX(-200%);
+    left: 35rem;
   }
 }
 .navigation__nav {
@@ -1213,7 +1213,7 @@ ul {
 @media (max-width: 37em) {
   .footer {
     padding: 3rem;
-    width: 100%;
+    width: 90%;
   }
 }
 .footer .container {
