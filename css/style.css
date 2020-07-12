@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100vw;
   }
 }
 
@@ -602,6 +603,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__button {
     display: inline-block;
+    transform: translateX(-130%);
   }
 }
 .navigation__background {
@@ -619,6 +621,7 @@ ul {
 @media (max-width: 37em) {
   .navigation__background {
     display: inline-block;
+    transform: translateX(-150%);
   }
 }
 .navigation__nav {
