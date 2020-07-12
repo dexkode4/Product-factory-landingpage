@@ -1,0 +1,53 @@
+.request-section {
+  background-color: $color-primary;
+  color: $color-primary-text;
+  padding: 10rem 0;
+  margin-top: 10rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email__form {
+  & h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+.request {
+  margin-bottom: 2rem;
+  &__mail {
+    border: none;
+    padding: 1rem 7rem;
+    border-radius: 1rem;
+    outline: none;
+    background-color: $color-btn-dark;
+    width: 50%;
+    color: $color-primary-text;
+    @media (max-width: 37em) {
+      padding: 1rem 5rem;
+    }
+    &:focus {
+      background-color: $color-btn-dark;
+    }
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder {
+      font-weight: 100;
+      color: $color-primary-text-dark;
+    }
+  }
+}
+.email__logo {
+  & img {
+    @media (max-width: 37em) {
+      width: 80%;
+    }
+  }
+}

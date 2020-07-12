@@ -1,0 +1,34 @@
+@mixin box {
+  background-color: $color-primary-text;
+  border-radius: 2rem;
+  height: auto;
+  color: $color-primary;
+  box-shadow: 0 2rem 5rem rgba($color-primary, 0.2);
+  position: relative;
+  z-index: 10;
+  @media (max-width: 37em) {
+    max-width: 60vw;
+    text-align: center;
+  }
+}
+
+@mixin textShadow($class, $text) {
+  #{$class}::before {
+    content: $text;
+    position: absolute;
+    font-size: 9rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-weight: 700;
+    opacity: 0.1;
+  }
+}
+
+@mixin positionCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

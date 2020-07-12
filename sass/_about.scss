@@ -1,0 +1,67 @@
+.about {
+  &__us {
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    padding: 6rem 8rem;
+
+    @include box;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &-summary {
+        margin-top: -15rem;
+        font-size: 1.5rem;
+        line-height: 2;
+        @media (max-width: 37em) {
+          margin-top: 4rem;
+          font-size: 1.2rem;
+          line-height: 2;
+        }
+      }
+      & .product__logo {
+        @media (max-width: 37em) {
+          display: none;
+          justify-content: center;
+        }
+        transform: translateY(-65%);
+        width: 50%;
+        & img {
+          width: 100%;
+        }
+      }
+      &-text {
+        flex-basis: 50%;
+        transform: translateY(-40%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 37em) {
+          transform: translateX(-75%);
+        }
+        & .aboutus {
+          font-weight: 700;
+          transform: translateX(250%);
+          @media (max-width: 37em) {
+            transform: translateX(300%);
+          }
+        }
+      }
+    }
+  }
+  & .course-experince {
+    @include box;
+  }
+}
+
+.socials {
+  &-fb {
+    margin-bottom: 1.5rem;
+  }
+  &-tw {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@include textShadow(".aboutus", "About");

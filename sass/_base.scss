@@ -1,0 +1,53 @@
+//////////////// colors  /////////////////
+
+$color-primary: #000;
+$color-primary-text: #fff;
+$color-btn-dark: rgb(54, 54, 54);
+$color-primary-text-dark: rgb(170, 168, 168);
+$color-btn-orange: rgb(226, 102, 57);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  @media (max-width: 37em) {
+    font-size: 50%;
+  }
+}
+body {
+  max-width: 100%;
+  background-color: whitesmoke;
+  @media (max-width: 37em) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 36em) {
+    max-width: 54rem;
+  }
+
+  @media (min-width: 48em) {
+    max-width: 72rem;
+  }
+  @media (min-width: 62em) {
+    max-width: 96rem;
+  }
+  @media (min-width: 75em) {
+    max-width: 114rem;
+  }
+}

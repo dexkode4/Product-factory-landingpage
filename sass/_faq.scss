@@ -1,0 +1,26 @@
+@include textShadow(".faq-header", "FAQ");
+
+.faq {
+  background-color: whitesmoke;
+  margin-top: 30rem;
+  &-header {
+    position: relative;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+  }
+  @media (max-width: 37em) {
+    margin-top: 20rem;
+  }
+}
+
+.question {
+  background-color: $color-primary-text;
+  padding: 1.3rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,71 @@
+@include textShadow(".course-experience__header", "Experience");
+
+.course-experience {
+  @include box;
+  padding: 6rem 8rem;
+  &__header {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 6rem;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__session {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    &-after {
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+    &-before {
+      border-bottom-right-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    & > * {
+      padding: 1rem 5rem;
+      border: 0.1rem solid $color-primary;
+      text-decoration: none;
+      color: $color-primary;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $color-primary;
+        color: $color-primary-text;
+      }
+    }
+    &-during {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.picture {
+  flex: 0 0 25%;
+  margin-right: 4rem;
+  @media (max-width: 37em) {
+    display: none;
+  }
+  & img {
+    width: 100%;
+  }
+}
+.text {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  line-height: 2;
+  position: relative;
+
+  @media (max-width: 37em) {
+    flex: 0 0 100%;
+    font-size: 1.2rem;
+  }
+}

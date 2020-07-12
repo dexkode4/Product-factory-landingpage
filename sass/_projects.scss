@@ -1,0 +1,110 @@
+.projects {
+  background-color: $color-primary-text;
+  padding: 10rem 0 5rem 0;
+  @media (max-width: 37em) {
+    margin-bottom: 0.5rem;
+    padding: 10rem 1rem 5rem 2rem;
+  }
+}
+
+@include textShadow(".project-header", "Projects");
+
+.project-header {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10rem;
+}
+
+.design {
+  display: flex;
+  justify-content: space-between;
+
+  &__carousel {
+    background-color: whitesmoke;
+    flex: 0 0 30%;
+    border-radius: 1.5rem;
+    transform: translateX(-15%);
+    @media (max-width: 37em) {
+      display: none;
+    }
+    &-item {
+      @include box;
+      width: 65%;
+      height: 100%;
+      margin: 5rem auto;
+    }
+  }
+  &__list {
+    flex: 0 0 50%;
+    @media (max-width: 37em) {
+      flex: 0 0 100%;
+    }
+    &-header {
+      font-size: 2.3rem;
+      position: relative;
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+    }
+    &-paragraph {
+      font-size: 1.2rem;
+      line-height: 3;
+      margin-bottom: 2rem;
+    }
+  }
+  & .list {
+    font-size: 1.2rem;
+    & > * {
+      margin-bottom: 2rem;
+      @media (max-width: 37em) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+.design__list-header::before {
+  content: " ";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: $color-primary;
+  position: absolute;
+  left: -3rem;
+  top: 0.3rem;
+}
+.carousel-root {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 37em) {
+    display: none;
+  }
+  & .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    background-color: whitesmoke;
+    font-size: 2rem;
+    border-radius: 1rem;
+  }
+  & .arrows {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      padding: 1.2rem 1.8rem;
+      border: 1px solid $color-primary;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.2s;
+      &:hover {
+        color: $color-primary-text;
+        background-color: $color-primary;
+      }
+    }
+  }
+}

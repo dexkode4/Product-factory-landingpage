@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-primary-text;
+  padding: 4rem;
+  @media (max-width: 37em) {
+    padding: 3rem;
+    width: 100%;
+  }
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .socials {
+      font-size: 2rem;
+      & > * {
+        margin-right: 2rem;
+      }
+    }
+    & .contact {
+      font-size: 1.2rem;
+    }
+
+    & .logo {
+      & img {
+        filter: contrast(0.1);
+      }
+    }
+  }
+}

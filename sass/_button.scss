@@ -1,0 +1,34 @@
+.btn {
+  border: none;
+  background-color: $color-btn-orange;
+  color: $color-primary-text;
+  text-align: center;
+  padding: 1.3rem 6rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  outline: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: $color-btn-orange;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-primary, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+}

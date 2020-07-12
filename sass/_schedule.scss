@@ -1,0 +1,82 @@
+@include textShadow(".schedule-header", "Schedule");
+
+.schedule-header {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.schedule {
+  padding: 5rem;
+  margin-top: 3rem;
+  &-footer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      &:not(:last-child) {
+        font-size: 1.3rem;
+        font-weight: 900;
+        margin-right: 2rem;
+      }
+    }
+    & button {
+      border-radius: 0.5rem;
+      padding: 0.7rem 6rem;
+    }
+    & div {
+      background-color: $color-primary;
+      color: $color-primary-text;
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.schedule-timeline {
+  margin-top: 4rem;
+  text-align: center;
+  & .text {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  & .dot {
+    color: $color-primary-text-dark;
+    padding: 0 4.5rem;
+    letter-spacing: 0.7rem;
+  }
+  & span {
+    margin-right: 1rem;
+  }
+}
+#success {
+  display: none;
+}
+
+.schedule-date {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  @media (max-width: 37em) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-start {
+    margin-right: 4rem;
+    @media (max-width: 37em) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  & > * {
+    @include box;
+    padding: 1.8rem 5rem;
+    border-radius: 1.1rem;
+    font-size: 1.3rem;
+    word-spacing: 1.5rem;
+  }
+}
