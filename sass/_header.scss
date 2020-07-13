@@ -5,6 +5,7 @@
   margin-bottom: 30rem;
   @media (max-width: 37em) {
     max-width: 100vw;
+    margin-bottom: 45rem;
   }
   a {
     color: $color-primary-text;
@@ -82,6 +83,9 @@
     justify-content: center;
     align-items: center;
     padding: 5rem 8rem;
+    @media (max-width: 37em) {
+      flex-direction: column-reverse;
+    }
     @include box;
 
     & > * {
@@ -126,6 +130,7 @@
   width: 70%;
   transform: translateX(40%);
   @media (max-width: 37em) {
-    display: none;
+    transform: translateX(-1%);
+    margin-bottom: 2rem;
   }
 }
