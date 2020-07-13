@@ -47,6 +47,9 @@
     color: $color-primary-text-dark;
     padding: 0 4.5rem;
     letter-spacing: 0.7rem;
+    @media (max-width: 37em) {
+      display: none;
+    }
   }
   & span {
     margin-right: 1rem;

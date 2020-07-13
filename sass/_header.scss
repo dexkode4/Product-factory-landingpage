@@ -3,9 +3,9 @@
   background-color: $color-primary;
   color: $color-primary-text;
   margin-bottom: 30rem;
-  @media (max-width: 37em) {
+  @media (max-width: 38.75em) {
     max-width: 100vw;
-    margin-bottom: 45rem;
+    margin-bottom: 60rem;
   }
   a {
     color: $color-primary-text;
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    @media (max-width: 37em) {
+    @media (max-width: 38.75em) {
       height: 8rem;
       justify-content: space-between;
     }
@@ -31,7 +31,7 @@
 
       & img {
         width: 45%;
-        @media (max-width: 37em) {
+        @media (max-width: 38.75em) {
           width: 120%;
           margin-top: 2.5rem;
           margin-left: 2rem;
@@ -47,7 +47,7 @@
       font-size: 1.15rem;
       font-weight: 500;
       transition: all 0.2s;
-      @media (max-width: 37em) {
+      @media (max-width: 38.75em) {
         display: none;
       }
       & > * {
