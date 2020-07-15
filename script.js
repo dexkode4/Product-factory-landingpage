@@ -6,7 +6,6 @@ let check = document.querySelector(".navigation__checkbox");
 
 const submit = (e) => {
   e.preventDefault();
-  console.log("email submitted!!");
   if (email.value) {
     message.style.display = "block";
     email.value = "";
