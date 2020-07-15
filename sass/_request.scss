@@ -45,9 +45,18 @@
   }
 }
 .email__logo {
+  &:before {
+    content: "";
+    background-image: url(../images/svg/footer\email\img.svg);
+    height: 20rem;
+    width: 20;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+  }
   & img {
     @media (max-width: 37em) {
-      width: 80%;
+      width: 70%;
     }
   }
 }
